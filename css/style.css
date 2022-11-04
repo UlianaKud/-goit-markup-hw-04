@@ -1,0 +1,332 @@
+/* ----------GENERAL---------- */
+:root {
+  --title-color: #212121;
+  --paragraf-color: #757575;
+  --active-color: #2196f3;
+  --white-color: #ffff;
+  --filter-color: #f5f4fa;
+  --active-button: #188ce8;
+  --link-footer: rgba(255, 255, 255, 0.6);
+  --text-decoration: none;
+  --marker: none;
+  --card-set-gap: 30px;
+  --card-set-column: 4;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--title-color);
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style-type: var(--marker);
+  margin: 0;
+  padding: 0;
+}
+.link {
+  font-style: normal;
+  text-decoration: var(--text-decoration);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-set-gap);
+}
+.card-set-item {
+  flex-basis: calc(
+    (100% - var(--card-set-gap) * (var(--card-set-column) - 1)) /
+      (var(--card-set-column))
+  );
+}
+/* ----------HEADER 1 PAGE---------- */
+header {
+  border-bottom: 1px solid #ececec;
+}
+.header-link{
+  padding-top: 25px;
+  padding-bottom: 25px; 
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav-blok {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact-link:not(:last-child) {
+  margin-right: 50px;
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--active-color);
+  text-decoration: var(--text-decoration);
+}
+.logo-header {
+  margin-right: 93px;
+}
+.logo-black {
+  color: #000000;
+}
+.nav-list-link,
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.nav-list-link {
+  color: var(--title-color);
+}
+.nav-list-link.current {
+  color: var(--active-color);
+}
+.contact-link {
+  color: var(--paragraf-color);
+}
+.nav-list-link:hover,
+.nav-list-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--active-color);
+}
+
+/*---------- HERO 1 page----------  */
+.hero,
+footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.main-heading {
+  margin: 0 auto 30px auto;
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+}
+.main-button {
+  display: flex;
+  min-width: 216px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--active-button);
+  cursor: pointer;
+}
+/* ----------MAIN GENERAL---------- */
+.section-header {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+.hidden-header {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* ----------SECTION ADVANTAGES 1 PAGE---------- */
+.blok-header {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+.blok-paragraf {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--paragraf-color);
+}
+/* ----------SECTION OUR WORK 1 PAGE ---------- */
+.work-section {
+  padding-top: 0;
+}
+.work-list-item {
+  --card-set-column: 3;
+}
+
+/*  ----------SECTION OUR TEAM 1 PAGE ---------- */
+.item-data {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.team-section {
+  background-color: var(--filter-color);
+}
+.work-header {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);  
+}
+.work-paragraf {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--paragraf-color);
+}
+/* ----------FOOTER---------- */
+footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: var(--white-color);
+}
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-decoration: var(--text-decoration);
+}
+.address-data {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.address-map {
+  color: var(--white-color);
+}
+.address-link {
+  color: var(--link-footer);
+}
+.address-map:hover,
+.address-link:hover,
+.address-map:focus,
+.address-link:focus {
+  color: var(--active-color);
+}
+
+
+/* ----------SECOND PAGE---------- */
+
+/* ----------FILTER BLOK---------- */
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.filter-list-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 73px;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  color: var(--title-color);
+  background-color: var(--filter-color);
+}
+.active-button,
+.filter-list-button:hover,
+.filter-list-button:focus {
+  color: var(--white-color);
+  background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+/* ----------PORTFOLIO LIST---------- */
+
+.portfolio-list-header {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.portfolio-list-data{
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: 0;
+}
+.portfolio-list-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--paragraf-color);
+}
+.portfolio-list-item {
+  --card-set-column: 3;
+}
